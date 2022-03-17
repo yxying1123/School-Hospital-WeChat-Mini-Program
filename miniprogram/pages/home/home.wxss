@@ -1,0 +1,89 @@
+/* pages/home/home.wxss */
+/* pages/home/home.wxss*/
+swiper{
+    /*
+    图片格式1920*1080；
+    */
+     width :100%;
+     height: calc(100vw *1080/1920)
+  
+ }
+ 
+ .index_cate_container {
+     display: flex;
+     height: 200px;
+     margin: 0;
+ 
+ }
+ 
+ .flex-wrp
+ {
+     background-color: white;
+     margin-top: 5px;
+     display: flex;
+   /*  background-color: aqua;*/
+     width: 100%;
+ }
+ .flex-item{
+    flex : 1;
+    height: 50px;
+   /*  border: darkorchid 2px solid;*/
+     left: 0;
+     right: 0;
+     bottom: 0;
+     top:0;
+     margin: auto;
+   }
+ 
+   .recommend_body
+   {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     background-color: #f7f7f7;
+     padding-bottom: 20rpx;
+   }
+ .recommend_online{
+     width: calc(50% - 30rpx);
+     height: 300rpx;
+     margin-top: 20rpx;
+     margin-left: 20rpx;
+     margin-right: 10rpx;
+     display: flex;
+     flex-direction: column;
+     background-color: white;
+     border-radius: 12rpx;
+     overflow:hidden;
+     text-align: center;
+     justify-content: center;
+ }
+ 
+ .bottom-css {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+ }
+ 
+ .bottom-css text {
+   color: #FA494D;
+   font-size: 30rpx;
+ }
+ 
+ .recommend_image
+ {
+   width :100%;
+    height: calc(100vw *800/800)
+ 
+ }
+ 
+ /*
+    图片格式1920*1080；
+    */
+   .grid_item{
+     width: 25%;
+     height: auto;
+     text-align: center;
+   } 

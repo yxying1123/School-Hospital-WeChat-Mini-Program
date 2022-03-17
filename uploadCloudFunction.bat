@@ -1,0 +1,1 @@
+"D:\2021_2022\人机交互\微信web开发者工具\cli.bat" cloud functions deploy --e magicloud-zghm1 --n quickstartFunctions --r --project "D:\2021_2022\task\cloudeproject" --report_first && "D:\2021_2022\人机交互\微信web开发者工具\cli.bat" cloud functions deploy --e testcloud-7g7sp2mwf461dbce --n quickstartFunctions --r --project "D:\2021_2022\task\cloudeproject" --report

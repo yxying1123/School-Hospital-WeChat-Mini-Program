@@ -1,0 +1,88 @@
+
+<!--pages/home/home.wxml-->
+<van-notice-bar
+  left-icon="volume-o"
+  text="预防千万条，口罩第一条 , 构建国家安全防线，是需要每一个公民共同的努力，出门请及时携带口罩。"
+/>
+<!--轮播图开始-->
+<view >
+      <swiper circular ="{{circular}}"  indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <swiper-item>
+            <image mode="widthFix" src="../images/swiper1.jpg" />
+          </swiper-item>
+          <swiper-item>
+            <image mode="widthFix" src="../images/swiper2.jpg"/>
+          </swiper-item>
+          <swiper-item>
+            <image mode="widthFix" src="../images/swiper3.jpg" />
+          </swiper-item>
+          <swiper-item>
+            <image mode="widthFix" src="../images/swiper4.jpg" />
+          </swiper-item>
+      </swiper>
+    </view>
+    <!--轮播图结束-->
+ 
+
+
+
+
+<!--导航开始-->
+<view id = "grid" style="display: flex;  margin-left: 5px;margin-top: 10px;">
+  <view wx:for="{{catesList}}"  wx:key="index" id = "grid-item" style="text-align:center; width: 25%; " >
+      <navigator url="{{item.navigator_url}}">
+          <image style="width: 40px;height: 40px;"  src="{{item.images_url}}"></image>
+          <view style="font-size: 12px;">
+            <text>{{item.text}}</text>
+            </view>
+      </navigator> 
+    </view>
+  </view>
+<!--
+<van-grid >
+  <navigator wx:for="{{catesList}}" wx:key="index" url="{{item.navigator_url}}">
+   <van-grid-item icon="{{item.images_url}}" text="{{item.text}}" />
+</navigator> 
+</van-grid>-->
+<!--
+    <view  class="flex-wrp"  style="flex-direction:row;padding-left: 25px;padding-right: 10px;" >
+            <view class="flex-item" wx:for="{{catesList}}" wx:key="index">
+            <navigator url="{{item.navigator_url}}">
+                <image mode="aspectFill" style="height: 30px; width:30px; "  src="{{item.images_url}}"></image>
+                <view style="font-family:'Monospace';font-size:10px;padding-left:5px">{{item.text}}</view>
+            </navigator> 
+        </view>
+    
+</view>
+-->
+
+
+<!--底下推荐的一部分-->
+<view wx:if="{{getdata == false}}">
+<image style="width: 100%;height: auto;" src="../images/loading.jpg"></image>
+</view>
+<view wx:else>
+<view class="recommend_body">
+<block wx:for="{{medicine}}" wx:key="id" >
+<view class="recommend_online" data-index = "{{item.index}}"  bindtap='tapDetail'>
+ <image class = "recommend_image" src="{{item.url}}"></image>
+        <h style="text-align:left;font-size: 13px;">{{item.name}}</h>
+        <view class='bottom-css'>
+          <text>¥{{item.price}}</text>
+        </view>
+      </view>
+</block>
+</view>
+</view>
+
+    <!--
+    <div class="index_cate_container" wx:for="{{catesList}}" wx:key="{{index}}">
+        <div class="index_cate_quarter">
+            <navigator  url= "{{item.navigator_url}}">
+                <image  src="{{item.images_url}}"></image>
+                </navigator>
+        </div>
+  </div>
+  -->
+  <!--导航结束-->

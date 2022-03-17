@@ -1,0 +1,4 @@
+/* pages/see_reserve/see_reserve.wxss */
+.grid{
+   margin-left: 20px;
+}

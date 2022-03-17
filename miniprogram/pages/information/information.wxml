@@ -1,0 +1,10 @@
+<!--pages/information/information.wxml-->
+<view style="text-align: center;justify-content: center;">
+    <image src="../images/red_ten.png" style="width: 100px;height: 100px;border-radius: 100px;"></image>
+    
+   
+           <view style="margin-top: 20px;margin-left: 60px;width: 200px;">·请还未接种第3针新疫苗的同学，去市中心医院接种</view> 
+        
+            <view style="margin-top: 20px;margin-left: 60px;width: 200px;">·去校医院看病的同学请带好口罩，出示健康码</view>
+    
+</view>

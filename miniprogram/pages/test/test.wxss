@@ -1,0 +1,4 @@
+/* pages/test/test.wxss */
+.radio {
+    transform:scale(0.7);
+  }

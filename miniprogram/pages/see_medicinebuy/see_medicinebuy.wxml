@@ -1,0 +1,42 @@
+<!--pages/see_medicinebuy/see_medicinebuy.wxml-->
+
+
+<view wx:if="{{reserve.length == 0}}">
+    <image src="../../images/nodate.png"></image>
+
+</view>
+<view wx:else >
+    <view style="font-size: 20px;text-align: center;justify-content: center;margin-bottom: 20px;margin-top: 20px;">查看历史购买药品记录</view>
+    <view wx:for="{{medicinebuy}}">
+
+            <view style="height:180px; width:100%;border-radius: 10px;text-align: center;justify-content: center;">
+ 
+            
+<view class="grid" style="margin-top: 10px;">
+    <view class="first_left">
+        <view class="first_left_top" style="font-size: 13px;">¥{{item.detail[0].price}}</view>
+        <image class="first_left_bottom" src="{{item.detail[0].url}}"></image>
+     </view>
+    <view class="first_right">
+        <view class="first_right_top">×{{item.detail[0].buynumber}}</view>
+        <view class="first_right_bottom" style="font-size: 12px;">{{item.detail[0].text}}</view>
+        <view class="first_right_bottom" style="font-size: 12px;">{{item.detail[0].time}}</view>
+    </view>
+        
+       
+
+  
+           
+
+        </view>
+
+        </view>
+        </view>
+       
+
+
+
+
+
+</view>
+

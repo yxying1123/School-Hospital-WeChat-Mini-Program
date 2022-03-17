@@ -1,0 +1,62 @@
+/* pages/doctor/doctor.wxss */
+
+page{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .navbar{
+    flex: none;
+    display: flex;
+    background: #fff;
+  }
+  .navbar .item{
+    position: relative;
+    flex: auto;
+    text-align: center;
+    line-height: 80rpx;
+  }
+  .navbar .item.active{
+    color: #1296db;
+  }
+  .navbar .item.active:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rpx;
+    background: #1296db;
+  }
+  .grid{
+    height:100px;
+    width:100%;
+    display: flex;
+    flex-flow:row;
+    border-bottom: #e6e6e6 10px solid;
+
+  }
+  .first_left{
+    width: 38%;
+    text-align: center;
+    justify-content: center;
+
+  }
+  .first_right{
+    width: 62%;display: flex;flex-flow: column;
+  }
+
+
+ .first_left_top {
+    background-color:#DC143C;width:82px;height: 20px;margin-left: 20px;
+  }
+  .first_left_bottom{
+    width: 80px;height: 70px;
+  }
+  .first_right_top{
+      height: 30%;
+  }
+  .first_right_bottom{
+      height: 70%;
+  }

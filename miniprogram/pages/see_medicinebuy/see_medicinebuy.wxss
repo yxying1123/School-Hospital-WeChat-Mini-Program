@@ -1,0 +1,34 @@
+/* pages/see_medicinebuy/see_medicinebuy.wxss */
+/* pages/see_reserve/see_reserve.wxss */
+
+.grid{
+    height:100px;
+    width:100%;
+    display: flex;
+    flex-flow:row;
+    border-bottom: #e6e6e6 10px solid;
+
+  }
+  .first_left{
+    width: 38%;
+    text-align: center;
+    justify-content: center;
+
+  }
+  .first_right{
+    width: 62%;display: flex;flex-flow: column;
+  }
+
+
+ .first_left_top {
+    background-color:#DC143C;width:82px;height: 20px;margin-left: 20px;
+  }
+  .first_left_bottom{
+    width: 80px;height: 70px;
+  }
+  .first_right_top{
+      height: 30%;
+  }
+  .first_right_bottom{
+      height: 70%;
+  }

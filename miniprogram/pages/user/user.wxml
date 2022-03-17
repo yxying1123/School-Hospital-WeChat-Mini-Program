@@ -1,0 +1,47 @@
+
+
+<view class='container' style="background: -webkit-linear-gradient(top,white,#f5f5f5,#f7f7f7);position:relative;" >
+
+  <view class="mine-top2" style="position: absolute">
+    <block wx:if="{{!hasUserInfo}}">
+    <image class="head" src="../images/user_round.png"></image>
+    <view class="top-right">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" style=" height: 80rpx;line-height:80rpx;font-size: 32rpx;margin-top: 10rpx;background-color: #e6e6e6;"> 获取头像昵称 </button>
+    </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="head" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <view class="top-right">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    </block>
+  </view>
+  <view class="mine-top "></view>
+</view>
+  <!-- 订单end -->
+
+<view style="height: 80px; background-color: #f7f7f7;"></view>
+  <!-- 工具 -->
+  <view  style="position:relative; ">
+   <view class="cell" bindtap="see_reserve" >
+   <view class="cell_left">查看预约</view>
+   <image class="cell_right" src="../images/arrow.png" style="margin-left: 200px;height: 15px;width: 15px;"></image>
+   </view>
+   <view class="cell"  bindtap="see_medicinebuy" >
+   <view class="cell_left" >药品记录</view>
+   <image class="cell_right" src="../images/arrow.png" style="margin-left: 200px;height: 15px;width: 15px;"></image>
+   </view>
+   <view class="cell"  bindtap="see_recommend" >
+   <view class="cell_left" >季节建议</view>
+   <image class="cell_right" src="../images/arrow.png" style="margin-left: 200px;height: 15px;width: 15px;"></image>
+  </view>
+  </view>
+
+  <!-- 工具end -->
+  <image class='bottomAD-css' src='../../pages/images/swiper2.jpg' style="width: 100%;margin-top: 20px; border-radius: 10px;"></image>
+
+
+
+
+
+

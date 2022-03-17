@@ -1,0 +1,89 @@
+<form action="" method="post" class="basic-grey">
+ 
+ <h1>预约门诊时间
+
+         
+ </h1>
+
+ <label>
+
+          <span>姓名 :</span>
+          <input model:value="{{name}}" id="themplate" type="text" name="name" placeholder="请填写姓名" />
+
+                  
+
+ </label>
+
+ <label>
+
+          <span>学号 :</span>
+
+          <input  model:value="{{studynum}}" id="name" type="text" name="name" placeholder="请填写学号"/>
+
+ </label>
+
+ <label>
+
+          <span>专业 :</span>
+
+          <input model:value="{{sclass}}" id="text" type="email" name="email" placeholder="请填写学号" />
+
+ </label>
+ <label>
+
+<span>电话 :</span>
+
+<input model:value="{{telephone}}" id="email" type="text" name="email" placeholder="请填写电话" />
+
+</label>
+
+<label>
+<span>时间 :</span>
+
+<input model:value="{{reserve_time}}" id="reserve" type="text" name="email" placeholder="请填写预约时间" />
+
+</label>
+
+
+
+
+<label >
+    <span  style="margin-top: 4px ;margin-left: 5px;margin-bottom: 10px;">性别：</span>
+  <view class="page-section" style="display: flex; flex-direction: row;">
+      <view  style="display: flex; flex-direction: row;"> 
+        <image src="{{man_url==true?'../images/round_choose.png':'../images/round_unchoose.png'}}" style="width: 20px; height: 20px;" bindtap="onChang"></image>
+        <view style="margin-left: 5px;margin-top: 4px">男</view>
+      </view>
+       <image src="{{woman_url==true?'../images/round_choose.png':'../images/round_unchoose.png'}}" style="width: 20px; height: 20px;margin-left: 50px;" bindtap="onChang"></image>
+        <view style="margin-left : 5px;margin-top: 4px">女</view>
+      <view>
+       
+    </view>
+   
+  </view>
+
+</label>
+
+
+
+ <label style="margin-top: 10px;">
+
+          <span>症状 :</span>
+
+          <textarea model:value="{{symptom}}" id="message" name="message" placeholder="请填写不适的症状"></textarea>
+
+ </label>
+
+ 
+
+ <label>
+
+          <span>
+              <image src="../images/red_ten.png" style="width: 30px;height: 30px;"></image>
+          </span>
+
+          <input type="button" class="button" value="确认预约" bindtap="input"  />
+
+ </label>
+
+</form>

@@ -1,0 +1,17 @@
+<!--pages/see_recommend/see_recommend.wxml-->
+<view wx:if="{{recommend.length  == 0}}">
+    <view style="text-align:center;justify-content: center;">
+        <image src="../../images/weather.jpg"></image>
+        <view style="margin-top: 50px;">今天天气小雨</view>
+        <view>建议带雨伞，多穿衣服</view>
+
+    </view>
+    
+</view>
+<view wx:else>
+    <view style="text-align:center;justify-content: center;">
+    <image src="../../images/fit.jpg"></image>
+    <view>{{recommend}}</view>
+    </view>
+
+</view>

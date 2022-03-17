@@ -1,0 +1,17 @@
+
+
+<view wx:if="{{medicine.length == 0}}">
+没有数组
+</view>
+<view class="recommend_body">
+<block wx:for="{{medicine}}" wx:key="id" >
+<view class="recommend_online" data-index = "{{item.index}}"  bindtap='tapDetail'>
+ <image class = "recommend_image" src="{{item.url}}"></image>
+        <h style="text-align:left;font-size: 13px;">{{item.name}}</h>
+        <view class='bottom-css'>
+          <text>¥{{item.price}}</text>
+        </view>
+      </view>
+</block>
+</view>
+

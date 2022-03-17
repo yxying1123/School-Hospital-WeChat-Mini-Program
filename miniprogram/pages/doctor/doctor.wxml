@@ -1,0 +1,67 @@
+<!--pages/doctor/doctor.wxml-->
+
+<!--导航条-->
+<view class="navbar">
+                                                                        
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique"
+ bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--首页-->
+<view hidden="{{currentTab!==0}}">
+
+<view class="grid" style="margin-top: 10px;" wx:for="{{doctor}}" wx:key="{{item._id}}">
+    <view class="first_left">
+        <view class="first_left_top" style="font-size: 13px;">{{item.job}}</view>
+        <image class="first_left_bottom" src="{{item.url}}"></image>
+     </view>
+    <view class="first_right">
+        <view class="first_right_top">{{item.name}}</view>
+        <view class="first_right_bottom" style="font-size: 12px;">{{item.experiende}}</view>
+    </view>
+</view>
+
+
+
+
+
+
+<!--
+</view>
+  <view style="height:100px;width:100%;display: flex;flex-flow:row;border-bottom: #e6e6e6 10px solid;">
+    <view style=" width: 38%;text-align: center;justify-content: center;">
+    <view style="background-color:#DC143C;width:82px;height: 20px;margin-left: 20px;">医生</view>
+    <image src="../images/doctor2.jpg" style="width: 80px;height: 70px;"></image>
+    </view>
+    <view style="width: 62%;display: flex;flex-flow: column;">
+        <view style="height: 30%;">
+        声明
+        </view>
+        <view >
+        12345546
+        </view>
+    </view>
+  </view>
+-->
+
+</view>
+ 
+<!--搜索-->
+<view hidden="{{currentTab!==1}}">
+    <view wx:for="{{doctor}}" wx:key="{{item._id}}" style="text-align: center;justify-content: center;">
+        <view  wx:if="{{item.work_boolean == true}}"  style="text-align: center;justify-content: center; height: 100px;margin-top: 20px; "> 
+   
+            <image src="{{item.url}}" style="width: 80px; height: 80px;border-radius:80px"></image>
+        <view style="font-size: 10px;">{{item.name}}</view>
+        <view  style="font-size: 10px;">{{item.job}}</view>
+       
+        </view>
+    </view>
+  
+</view>
+ 
+<!--我-->
+<view hidden="{{currentTab!==2}}">
+    <image mode="aspectFit" src="../images/swiper.jpg"></image>
+      <view style=" font-family: 'Times New Roman', Times, serif; padding:5px">  湘潭大学医院是一所集医疗、预防保健、健康教育为一体的综合性医院，位于湘潭大学校内。现有高级专业技术人员26人，开放病床85张。门诊部设置有内科、外科、妇科、儿科、骨伤科、中医科、牙科、眼科耳鼻喉科、预防保健科、针灸按摩科、理疗科、放射、B超、心电图、检验等科室。住院部设置内科、外科两病区，病室配置了空调、电视、卫生间、开水饮水系统等设施，是湘潭市医保定点单位。</view>
+</view>

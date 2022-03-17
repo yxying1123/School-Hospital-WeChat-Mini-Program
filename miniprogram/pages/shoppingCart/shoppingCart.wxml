@@ -1,0 +1,34 @@
+
+<!--pages/shoppingCart/shoppingCart.wxml-->
+
+<!--pages/shoppingCart/shoppingCart.wxml-->
+<view class='container'>
+  <view class='order-detail'>
+    <view wx:for='{{goods}}' class='goods-item' wx:key='{{item.id}}' style="background-color: #f7f7f7;"  >
+      <image class='select-css' mode='aspectFit' src="{{selectList[item.id]==1?'../images/select.png':'../images/unselect.png'}}" bindtap='tapSelect' data-id='{{item.id}}'></image>
+      <image style='width:150rpx; height:150rpx; background-color:white' src='{{item.url}}'></image>
+      <view style='display:flex; flex-direction:column; width:65%'>
+        <view class='goods-name'>
+          <text>{{item.text}}</text>
+        </view>
+        <view style='display:flex; flex-direction:row; align-items:center; margin-top:0rpx;'>
+          <view class='goods-price'>￥{{item.price}}</view>
+          <view class='right-css'>
+            <image disabled='{{isNotAdd}}' src='../images/add0.png' data-type='2' data-id='{{item.id}}' class='num-btn' bindtap='numReducet'></image>
+            <view class='item-num'>{{item.buynumber}}</view>
+            <image src='../images/add1.png' data-type='1' data-id='{{item.id}}' class='num-btn' bindtap='numAdd'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view class='bottom-total'>全选
+      <image wx:if="{{isAllSelect}}"  src="../images/select.png" bindtap='tapAllSelect'></image>
+      <image wx:else  src="../images/unselect.png" bindtap='tapAllSelect'></image>
+    </view>
+    <view class='bottom-total'>总计:￥{{total}}</view>
+    <view class='bottom-topay' bindtap='toOrder'>去结算</view>
+  </view>
+</view>
+

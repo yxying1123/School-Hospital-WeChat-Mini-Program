@@ -1,0 +1,27 @@
+<radio-group class="radio-group" bindchange="checkboxChange" data-id="{{item.id}}">
+   <label class="radio" bindtap="">
+      <radio value="1" />
+      <text>在我市购买或租赁住房并实际居住</text>
+    </label>
+    <label class="radio" bindtap="">
+      <radio value="2" />
+      <text>亲属投靠</text>
+    </label>
+    <label class="radio" bindtap="">
+      <radio value="3" />
+      <text>工作调动</text>
+    </label>
+    <label class="radio" bindtap="">
+      <radio value="4" />
+      <text>大中专毕业生毕业分配</text>
+    </label>
+    <label class="radio" bindtap="">
+      <radio value="5" />
+      <text>随军家属落户</text>
+    </label>
+    <label class="radio" bindtap="">
+      <radio value="6" />
+      <text>转业、退伍军人落户</text>
+    </label>
+  <!-- </view> -->
+</radio-group>

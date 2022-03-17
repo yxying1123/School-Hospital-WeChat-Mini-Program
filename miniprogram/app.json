@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/shoppingCart/shoppingCart",
+    "pages/createOrder/createOrder",
+    "pages/goodDetail/goodDetail",
+    "pages/user/user",
+    "pages/buymedicine/buymedicine",
+    "pages/reserve/reserve",
+    "pages/doctor/doctor",
+    "pages/information/information",
+
+    "pages/see_reserve/see_reserve",
+    "pages/see_medicinebuy/see_medicinebuy",
+    "pages/see_recommend/see_recommend",
+
+
+    "pages/test/test",
+    "pages/index/index",
+    "pages/getOpenId/index",
+    "pages/getMiniProgramCode/index",
+    "pages/deployService/index",
+    "pages/createCollection/index",
+    "pages/uploadFile/index",
+    "pages/selectRecord/index",
+    "pages/updateRecord/index",
+    "pages/updateRecordResult/index",
+    "pages/updateRecordSuccess/index",
+    "pages/sumRecord/index",
+    "pages/sumRecordResult/index"
+  ],
+  "window": {
+    "backgroundColor": "#1296db",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "校医院",
+    "navigationBarTextStyle": "white"
+  },
+  
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "1296db",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/taber_car.png",
+        "iconPath": "images/taber_car_unchoose.png",
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "images/home_choose.png",
+        "iconPath": "images/home_unchoose.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+     
+      {
+        "selectedIconPath": "images/taber_user.png",
+        "iconPath": "images/taber_user_unchoose.png",
+        "pagePath": "pages/user/user",
+        "text": "个人"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
